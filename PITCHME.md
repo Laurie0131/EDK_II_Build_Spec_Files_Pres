@@ -215,24 +215,6 @@ It is NOT permissible to list a Library Class entry under common and under a spe
 Paths cannot contain indirect directory references outside of this package's directory tree (use of “..” is not allowed in a directory path name.)
 
 
----
-@title[Platform Description File ]
-#### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
-
-<p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
-
-- <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p>
-- <p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> |
-- <p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> |
-- <p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> |
-- <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> |
-
-
-
-
-Note:
-DSC file must define all libraries, components and/or modules that will be used by one package
-
 ---?image=/assets/images/slides/Slide15.JPG
 @title[Package Description File]
 #### <p align="right"><span class="gold" > Package Description File (DSC)</span></p>
@@ -258,25 +240,32 @@ It is possible to reference a PCD from another package, but do not list it here.
 Coincidentally,  as soon as you make a new PCD, you must make a new token space GUID, because all the PCDs are defined by a token space GUILD, followed by the PCD name. A new token space means you must have a GUID for the token space. So, any new PCDs are also going to have a GUID.
 Finally, user extensions are rarely used but are optionally present. 
 
+---
+@title[Platform Description File ]
+#### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
+
+<p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
+
+- <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p> |
+- <p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> |
+- <p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> |
+- <p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> |
+- <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> |
+
+
+
+
+Note:
+DSC file must define all libraries, components and/or modules that will be used by one package
+
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
 
 Note:
 This is an example DSC file
 
-
-
----
+---?image=/assets/images/slides/Slide21.JPG
 @title[Flash Description File ]
 #### <p align="right"><span class="gold" > Flash Description File (FDF)</span></p>
-<br><br>
-<p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p>
-<br>
-<p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p>
-<br>
-<p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p>
-
-
-
 
 Note:
 - FD section defines for Flash devices must be in the FDF file
@@ -298,9 +287,20 @@ Note:
 - an option ROM section if what you are trying to build is a PCI option on
 - some user extensions. 
 
----?image=/assets/images/slides/Slide21.JPG
+
+
+---
 @title[Flash Description File ]
 #### <p align="right"><span class="gold" > Flash Description File (FDF)</span></p>
+<br><br>
+<p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p>
+<br>
+<p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p>
+<br>
+<p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p>
+
+
+
 
 Note:
 - FD section defines for Flash devices must be in the FDF file
