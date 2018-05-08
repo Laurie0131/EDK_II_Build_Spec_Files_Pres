@@ -44,7 +44,7 @@ Note:
 <br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
  
 ---?image=assets/images/binary-strings-black2.jpg
 @title[EDK II Overview Section]
@@ -220,7 +220,7 @@ Paths cannot contain indirect directory references outside of this package's dir
 #### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
 
 <p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
-<br>
+
 - <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p>
 - <p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> |
 - <p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> |
@@ -260,21 +260,9 @@ Finally, user extensions are rarely used but are optionally present.
 
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
 
-
----?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
-
-@[16-20](List of Defines,  Package Name, GUILD, Version ...)
-@[22-23](The Include section,there is an include directory for this package )
-@[25-37]( Library classes section, these are the libraries created by this package)
-
-
 Note:
-
 This is an example DSC file
-This is the Ovmf x64 package so this is the package consists of some of the same things that we saw in the DEC file.
-NOTE: It has a different GUID . If you have DEC and a DSC for the same package, they will need to have different GUIDs.  
-In the library classes section there are a lot of library instances mapping back to the library class name.
-The first one,  the “...” is the name of the library class, followed by the pipe symbol that ends the name of the library class. This is followed by the path of an INF file that, when compiled to binary, will meet the requirements of the application entry point.
+
 
 
 ---
@@ -400,7 +388,7 @@ This is an example FDF file
 <br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
  
 
 <!---  END OF SLIDES
