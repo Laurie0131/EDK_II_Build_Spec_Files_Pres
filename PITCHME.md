@@ -41,10 +41,10 @@ Note:
 @title[Lesson Objective]
 <br>
 ### <p align="center"<span class="gold"   >Lesson Objective </span></p><br>
-<br><br><br><br>
+<br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: DSC, DEC, & FDF </span><br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>DSC, DEC, & FDF </span><br><br>
  
 ---?image=assets/images/binary-strings-black2.jpg
 @title[EDK II Overview Section]
@@ -88,8 +88,7 @@ See EDK II Build Specification Documentation:
 <br>
 <br>
 <br>
-<br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org
+<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -120,8 +119,7 @@ Each file type has spec on EDK II website … Tianocore.org
 <br>
 <br>
 <br>
-<br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org
+<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -152,8 +150,7 @@ Each file type has spec on EDK II website … Tianocore.org
 <br>
 <br>
 <br>
-<br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org
+<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -222,13 +219,13 @@ Paths cannot contain indirect directory references outside of this package's dir
 @title[Platform Description File ]
 #### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
 
-<p align="center"><span style="font-size:1.10em" > &nbsp;&nbsp;&nbsp;<font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
-
-<font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> |
-<font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> |
-<font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> |
-<font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> |
-<font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> 
+<p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
+<br>
+<p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p>
+<p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p>
+<p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p>
+<p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p>
+<p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p>
 
 
 
@@ -267,14 +264,10 @@ Finally, user extensions are rarely used but are optionally present.
 @[16-20](List of Defines,  Package Name, GUILD, Version ...)
 @[22-23](The Include section,there is an include directory for this package )
 @[25-37]( Library classes section, these are the libraries created by this package)
-@[59-65]( Guids section)
-@[67-73]( Protocols section)
-@[74-82]( PCDs Section, Declared by this package)
-@[111-120]( Dynamic PCDs Section, Declared by this package)
-@[140-153]( Feature flag PCDs Section, Declared by this package)
 
 
 Note:
+
 This is an example DSC file
 This is the Ovmf x64 package so this is the package consists of some of the same things that we saw in the DEC file.
 NOTE: It has a different GUID . If you have DEC and a DSC for the same package, they will need to have different GUIDs.  
@@ -285,9 +278,11 @@ The other libraries here are: “BootServicesTableLib” , a “DevicePathLib”
 ---
 @title[Flash Description File ]
 #### <p align="right"><span class="gold" > Flash Description File (FDF)</span></p>
-
+<br><br>
 <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p>
-<p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p>
+<br>
+<p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p>
+<br>
 <p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p>
 
 
@@ -397,13 +392,11 @@ This is an example FDF file
 
 ---  
 @title[Lesson Summary]
-<br>
-### <p align="center"<span class="gold"   >Summary </span></p><br>
-<br><br><br><br>
+<br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: DSC, DEC, & FDF </span><br><br>
- 
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>DSC, DEC, & FDF </span><br><br>
+
 
 <!---  END OF SLIDES
 -->
