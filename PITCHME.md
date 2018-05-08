@@ -44,7 +44,7 @@ Note:
 <br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>DSC, DEC, & FDF </span><br><br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
  
 ---?image=assets/images/binary-strings-black2.jpg
 @title[EDK II Overview Section]
@@ -88,7 +88,7 @@ See EDK II Build Specification Documentation:
 <br>
 <br>
 <br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
+<span style="font-size:0.8em" >wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -119,7 +119,7 @@ Each file type has spec on EDK II website … Tianocore.org
 <br>
 <br>
 <br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
+<span style="font-size:0.8em" >wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -150,7 +150,7 @@ Each file type has spec on EDK II website … Tianocore.org
 <br>
 <br>
 <br>
-<span style="font-size:0.8em" >&nbsp;&nbsp;&nbsp;&nbsp;wiki Link on tianocore.org<br>
+<span style="font-size:0.8em" >wiki Link on tianocore.org<br>
 <a href='https://github.com/tianocore/tianocore.github.io/wiki/Build-Description-Files'>Build Descrip Files</a></span>	
 
 Note:
@@ -221,11 +221,11 @@ Paths cannot contain indirect directory references outside of this package's dir
 
 <p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
 <br>
-<p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p>
-<p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p>
-<p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p>
-<p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p>
-<p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p>
+- <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p>
+- <p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> |
+- <p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> |
+- <p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> |
+- <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> |
 
 
 
@@ -258,6 +258,8 @@ It is possible to reference a PCD from another package, but do not list it here.
 Coincidentally,  as soon as you make a new PCD, you must make a new token space GUID, because all the PCDs are defined by a token space GUILD, followed by the PCD name. A new token space means you must have a GUID for the token space. So, any new PCDs are also going to have a GUID.
 Finally, user extensions are rarely used but are optionally present. 
 
+---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
+
 
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
 
@@ -273,7 +275,7 @@ This is the Ovmf x64 package so this is the package consists of some of the same
 NOTE: It has a different GUID . If you have DEC and a DSC for the same package, they will need to have different GUIDs.  
 In the library classes section there are a lot of library instances mapping back to the library class name.
 The first one,  the “...” is the name of the library class, followed by the pipe symbol that ends the name of the library class. This is followed by the path of an INF file that, when compiled to binary, will meet the requirements of the application entry point.
-The other libraries here are: “BootServicesTableLib” , a “DevicePathLib”, a “debuglib”, and a “PCD Lib” 
+
 
 ---
 @title[Flash Description File ]
@@ -392,11 +394,14 @@ This is an example FDF file
 
 ---  
 @title[Lesson Summary]
+ 
+<br>
+### <p align="center"<span class="gold"   >Summary</span></p><br>
 <br><br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>DSC, DEC, & FDF </span><br><br>
-
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain the Build components and Build text files: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DSC, DEC, & FDF </span><br><br>
+ 
 
 <!---  END OF SLIDES
 -->
