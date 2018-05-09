@@ -202,5 +202,9 @@ h6 {
     font-size: 50%;
 }
    
+.no-bullet {
+    list-style-type: none !important;
+    list-style-position: outside !important;
+}
 
 
