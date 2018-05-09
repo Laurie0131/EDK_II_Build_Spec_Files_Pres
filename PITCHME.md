@@ -318,7 +318,7 @@ Note:
 ---
 @title[Flash Description File ]
 #### <p align="right"><span class="gold" > Flash Description File (FDF)</span></p>
-<br><br>
+<br>
 
 - <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p> |
 <br>
