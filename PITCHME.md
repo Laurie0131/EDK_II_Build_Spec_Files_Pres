@@ -261,7 +261,7 @@ Finally, user extensions are rarely used but are optionally present.
 <p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
 @ul[no-bullet]
 -  <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p> 
--  <p align="center"><font color="#702AA0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
+-  <p align="center"><font color="#ff00ff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
 -  <p align="center"><font color="#87E2A9">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
 -  <p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> 
 -  <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> 
@@ -342,7 +342,7 @@ Note:
 @ul[no-bullet]
 - <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p> 
 <br>
-- <p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p> 
+- <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p> 
 <br>
 - <p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p> 
 @ulend
