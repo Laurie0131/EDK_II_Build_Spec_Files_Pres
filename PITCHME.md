@@ -193,6 +193,19 @@ Finally, user extensions are rarely used but are optionally present.
 
 ---?code=sample/OvmfPkg/OvmfPkg.dec&lang=shell&title=Example: DEC file
 
+Note:
+This is an Example DEC File
+
+The name of this package is the Ovmf package. It has some GUIDs. In the includes.common section there is an include directory for this package called include, and that is where to locate all of the include files. 
+In this example it finds a library class called LoadLinuxLib . The main interface for that is that it includes “Include/Library/  .h” 
+We can see that it defines a GUID called “gUefiOvmfPkgTokenSpaceGuid” and it defines what the GUID value is.
+
+Restrictions 
+It is NOT permissible to list a Library Class entry under common and under a specific architecture. It is permissible to specify Library Class entries under all architectures except “common” if different header filename values are required for different architectures. 
+Paths cannot contain indirect directory references outside of this package's directory tree (use of “..” is not allowed in a directory path name.)
+
++++?code=sample/OvmfPkg/OvmfPkg.dec&lang=shell&title=Example: DEC file details
+
 @[16-20](List of Defines,  Package Name, GUILD, Version ...)
 @[22-23](The Include section,there is an include directory for this package )
 @[25-37]( Library classes section, these are the libraries created by this package. Notice each is pointing to a .h file )
@@ -257,8 +270,11 @@ Finally, user extensions are rarely used but are optionally present.
 
 Note:
 DSC file must define all libraries, components and/or modules that will be used by one package
-
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
+Note:
+This is an example DSC file
+
++++?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file details
 
 
 
@@ -379,8 +395,9 @@ Note:
 #### <p align="right"><span class="gold" > Flash Device Configuration Common <br> Layout File (.fdf)</span></p>
 
 Note:
-
 ---?code=sample/OvmfPkg/OvmfPkgX64.fdf&lang=shell&title=Example: FDF file
+
++++?code=sample/OvmfPkg/OvmfPkgX64.fdf&lang=shell&title=Example: FDF file details
 
 @[19-35](List of Defines,  defines the main macros and sets the dependent PCDs.)
 @[99-108]( The FD Section - produces a file OVMF.FD in the build outputs directory )
