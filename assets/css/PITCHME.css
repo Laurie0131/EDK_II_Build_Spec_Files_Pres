@@ -139,7 +139,7 @@ span.aside {
   box-shadow : none;
 }
 .reveal pre code {
-  font-size: 0.7em;
+  font-size: 0.8em;
   line-height: 1.0;
   max-height: 50vh !important;
   opacity: 0.95;
