@@ -162,7 +162,7 @@ span.aside {
 .gp-download { margin-left: 10px; }
 
 .gp-bullet-green { 
-  color: #00CC99;;
+  color: #00CC99;
   margin-left: 10px; 
 }
 
@@ -206,5 +206,37 @@ h6 {
     list-style-type: none !important;
     list-style-position: outside !important;
 }
+
+.cyan {
+  color: #00FFFF;
+}
+.yellow {
+  color: #FFFF00;
+}
+.magenta {
+  color: #702AA0;
+}
+.lt_green {
+  color: #A6C639;
+}
+.green {
+  color:  #00CC99;
+}
+
+.cream {
+  color: #FFFF99;
+}
+.gold2 {
+  color: #FFC000;
+}
+.u-term{
+  color: #300a24;
+}
+
+
+
+
+
+
 
 

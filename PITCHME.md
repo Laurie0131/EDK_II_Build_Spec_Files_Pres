@@ -253,6 +253,7 @@ It is possible to reference a PCD from another package, but do not list it here.
 Coincidentally,  as soon as you make a new PCD, you must make a new token space GUID, because all the PCDs are defined by a token space GUILD, followed by the PCD name. A new token space means you must have a GUID for the token space. So, any new PCDs are also going to have a GUID.
 Finally, user extensions are rarely used but are optionally present. 
 
+
 ---
 @title[Platform Description File ]
 #### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
@@ -269,6 +270,25 @@ Finally, user extensions are rarely used but are optionally present.
 
 Note:
 DSC file must define all libraries, components and/or modules that will be used by one package
+
+---
+@title[Platform Description File ]
+#### <p align="right"><span class="gold" > Platform Description File (DSC)</span></p>
+
+<p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
+@ul[no-bullet]
+-  <p align="center"><font color="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p> 
+-  <p align="center"><font color="lt_green">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
+-  <p align="center"><font color="white">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
+-  <p align="center"><font color="magenta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> 
+-  <p align="center"><font color="cyan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> 
+@ulend
+
+
+Note:
+DSC file must define all libraries, components and/or modules that will be used by one package
+
+
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
 Note:
 This is an example DSC file
