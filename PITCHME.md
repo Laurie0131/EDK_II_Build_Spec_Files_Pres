@@ -320,11 +320,11 @@ Note:
 #### <p align="right"><span class="gold" > Flash Description File (FDF)</span></p>
 <br>
 @ul[no-bullet]
-- <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p> |
+- <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Describes information about flash parts</font> </p> 
 <br>
-- <p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p> |
+- <p align="center"><font color="##00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to create firmware images, Option ROM images or bootable images </font> </p> 
 <br>
-- <p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p> |
+- <p align="center"><font color="#A6C639">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rules for combining binaries (Firmware Image) built from a DSC file</font> </p> 
 @ulend
 
 Note:
