@@ -141,7 +141,7 @@ span.aside {
 .reveal pre code {
   font-size: 0.8em;
   line-height: 1.0;
-  max-height: 50vh !important;
+  max-height: 60vh !important;
   opacity: 0.95;
   border-radius: 10px;
 }
@@ -152,7 +152,7 @@ span.aside {
   padding: 1px 15px;
   border-radius: 15px;
   opacity: 0.75 !important;
-  font-size: 50% !important;
+  font-size: 60% !important;
 }
 
 .gp-tip { font-size : 1.5em; }
