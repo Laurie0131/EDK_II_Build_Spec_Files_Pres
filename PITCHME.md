@@ -261,8 +261,8 @@ Finally, user extensions are rarely used but are optionally present.
 <p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
 @ul[no-bullet]
 -  <p align="center"><font color="#FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p> 
--  <p align="center"><font color="#FFFF99">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
--  <p align="center"><font color="#A6C639">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
+-  <p align="center"><font color="#702AA0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
+-  <p align="center"><font color="#87E2A9">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
 -  <p align="center"><font color="#FFC000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> 
 -  <p align="center"><font color="#00FFFF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> 
 @ulend
@@ -278,8 +278,8 @@ DSC file must define all libraries, components and/or modules that will be used 
 <p align="center"><span style="font-size:1.20em" > <font color="#00FFFF">DSC file is the recipe for creating a package</font></span></p>
 @ul[no-bullet]
 -  <p align="center"><font color="yellow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Definitions for the package build </font> </p> 
--  <p align="center"><font color="gold2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </font> </p> 
--  <p align="center"><font color="cream">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
+-  <p align="center"><span class="gold2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK libraries (for EDK Components)  </span> </p> 
+-  <p align="center"><font color="orange">&nbsp;&nbsp;EDK II Library Class Instance Mappings (for EDK II Modules) </font> </p> 
 -  <p align="center"><font color="magenta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II PCD Entry Settings  </font> </p> 
 -  <p align="center"><font color="cyan">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK Component or EDK II Module INF Files</font> </p> 
 @ulend
