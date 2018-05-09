@@ -260,6 +260,17 @@ DSC file must define all libraries, components and/or modules that will be used 
 
 ---?code=sample/OvmfPkg/OvmfPkgX64.dsc&lang=shell&title=Example: DSC file
 
+
+
+@[22-32](List of Defines,  Package Name, GUILD, Version ...)
+@[33-41]( Define Switches to deterimine some configurations )
+@[62-74]( Build Options)
+@[106-115]( Library Classes - Global)
+@[404-421]( PCDs Section, changing the default value by this package)
+@[502-520]( Dynamic PCDs Section, changing the default value by this package)
+@[557-571]( Finally the Components section, which every DSC MUST have)
+
+
 Note:
 This is an example DSC file
 
@@ -371,9 +382,18 @@ Note:
 
 ---?code=sample/OvmfPkg/OvmfPkgX64.fdf&lang=shell&title=Example: FDF file
 
-@[16-20](List of Defines,  Package Name, GUILD, Version ...)
-@[22-23](The Include section,there is an include directory for this package )
-@[25-37]( Library classes section, these are the libraries created by this package)
+@[19-35](List of Defines,  defines the main macros and sets the dependent PCDs.)
+@[99-108]( The FD Section - produces a file OVMF.FD in the build outputs directory )
+@[110-132]( Begin the Variable Storage Regions - Layout Regions that define an empty variable store. NV Vars, Event Log, FTW regions defined)
+@[220-225]( Firmware Volumes that are going to be created )
+@[282-301]( Now define what goes inside the SEC Firmware Volume)
+@[303-312]( We see that SecMain and the reset vector are defined)
+@[314-336]( Now define what goes inside the PEI Firmware Volume  and etc...)
+
+
+
+
+
 @[59-65]( Guids section)
 
 
