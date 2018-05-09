@@ -389,12 +389,9 @@ Note:
 @[282-301]( Now define what goes inside the SEC Firmware Volume)
 @[303-312]( We see that SecMain and the reset vector are defined)
 @[314-336]( Now define what goes inside the PEI Firmware Volume  and etc...)
+@[612-624]( Rules section for determining how to combine binary images, for example compression algorithms)
+@[19-719]( Showing the whole FDF file again)
 
-
-
-
-
-@[59-65]( Guids section)
 
 
 Note:
