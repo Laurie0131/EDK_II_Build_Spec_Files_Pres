@@ -1,6 +1,8 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Title-UEFI Overview]
-<br><br><br><br><br>
+<br><br>
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/EDK_II_Build_Spec_Files_Pres/master#/</span>
+<br><br><br>
 ## <span class="gold"   >&nbsp;UEFI & EDK II Training</span>
 
 ####  &nbsp;&nbsp;EDK II Build Specification Files
@@ -52,11 +54,38 @@ Note:
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDK II Build Text files </span>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The EDK II Specification: DEC, DSC & FDF files </span>
 
----?image=/assets/images/slides/Slide3.JPG
+
+
+
++++
+<!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->		  
 @title[EDK II File Extensions]
-<p align="center"><span style="font-size:1.0em" > &nbsp;&nbsp;&nbsp;<font color="#e49436">EDK II File Extensions</font></span>
+<p align="center"><span style="font-size:1.0em" > &nbsp;&nbsp;&nbsp;<font color="#e49436"><b>EDK II File Extensions</b></font></span>
 <span style="font-size:0.7em" ><font color="white"><br>-&nbsp;Located on <a href='http://www.tianocore.org'>tianocore.org</a> project edk2  </font> </span></p>
+
+
+<table id="recTable">
+	<tr>
+		<td bgcolor="#121212"><p style="line-height:70%"><span style="font-size:0.75em" ><b>@color[#00ffff](.DSC) <br>.DEC &nbsp;&nbsp;<br>@color[#00ffff](.INF)<br>.FDF</b></span></p></td>
+		<td bgcolor="#121212"><p style="line-height:70%"><span style="font-size:0.75em" ><b>@color[#00ffff](- Platform Description ) <br>- Package Declaration <br>@color[#00ffff](- Module Definition <i>define a component</i>) <br>- Flash Description </b></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#323232"><p style="line-height:50%"><span style="font-size:0.65em" >.VFR <br>.UNI <br>.c & .h </span></p></td>
+		<td bgcolor="#323232"><p style="line-height:50%"><span style="font-size:0.65em" >- Visual Forms Representation for User interface <br>- Unicode String text files w/ ease of localization<br>- Source code files</span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#323232"><p style="line-height:50%"><span style="font-size:0.65em" >.FD <br>.FV </span></p></td>
+		<td bgcolor="#323232"><p style="line-height:50%"><span style="font-size:0.65em" >- Final Flash Device Image  <br>- Firmware Volume File</span></p></td>
+	</tr>
+
+</table>
+
+@snap[north-east span-30]
+@css[ text-yellow fragment](<span style="font-size:01.45em" ><b><i><br><br>&nbsp;@color[yellow](EDK II Spec)<br><br><br>&nbsp;@color[yellow](Source)<br><br>&nbsp;@color[yellow](Output)</i></b> </span>)
+@snapend
+  
+ 
 
 Note:
 So for file extensions <br>
@@ -73,6 +102,7 @@ First four have a specification file located on tianocore.org.
 See EDK II Build Specification Documentation: 
           http://tianocore.org/  
 		  
+
 ---?image=/assets/images/slides/Slide5.JPG
 <!-- .slide: data-transition="none" -->		
 @title[Build Description File Types ]
@@ -234,24 +264,12 @@ Paths cannot contain indirect directory references outside of this package's dir
 
 Note:
 
-One DEC file per package
-Required for EDK II modules using extended INF and extended DSC format files 
-
-The “ D” in DEC stands for “declaration”, as in package declaration file (DEC).
-There is one DEC file for each package.
-This file is required for using EDK II modules using the extended INF and extended DSC format files. 
-If you make a new package you must have a DEC file for it.
-SYNTAX -
-The DEC has a defines section that says what this package is. It gives it a GUID and a name. Every other section described here is optional. 
-It can have an includes section words saying “the include directories that this package has are as follows”. Then you would have some include directories. For example, you might be able to say this is my IA64 include and this is my X64 include, etc.
-It has a library class section (optional). This exposes the library classes are defined in this package.
-It has GUID section if there are any GUIDs that you have. Certain structures have GUIDs defines for them. If that structure is defined in this package, it would be listed there.
-Each protocol for every protocol header file that is in your package you list.  You list the GUID of that protocol in the protocol section.
-The same is true for PPIs; they are also identified by GUID.
-PCD, if any module contained in your package defines a new PCD, this is where you tp look it up.
-It is possible to reference a PCD from another package, but do not list it here. This location is for new PCDs.
-Coincidentally,  as soon as you make a new PCD, you must make a new token space GUID, because all the PCDs are defined by a token space GUILD, followed by the PCD name. A new token space means you must have a GUID for the token space. So, any new PCDs are also going to have a GUID.
-Finally, user extensions are rarely used but are optionally present. 
+- DSC file must define all libraries, components and/or modules that will be used by one package
+- DSC files are a list of: 
+  - EDK Component or EDK II Module INF Files   
+  - EDK libraries (for EDK Components) 
+  - EDK II Library Class Instance Mappings (for EDK II Modules) 
+  - EDK II PCD Entry Settings  
 
 
 ---
