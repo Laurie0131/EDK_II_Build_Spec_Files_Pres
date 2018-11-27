@@ -57,9 +57,7 @@ Note:
 
 
 
-+++
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->		  
+---
 @title[EDK II File Extensions]
 <p align="center"><span style="font-size:1.0em" > &nbsp;&nbsp;&nbsp;<font color="#e49436"><b>EDK II File Extensions</b></font></span>
 <span style="font-size:0.7em" ><font color="white"><br>-&nbsp;Located on <a href='http://www.tianocore.org'>tianocore.org</a> project edk2  </font> </span></p>
